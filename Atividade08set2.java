@@ -9,19 +9,23 @@ public class Atividade08set2 {
 		/*Faça um programa que receba três inteiros e diga qual deles é o maior.		 
 		 */
 		
-		float num = 0, maior = 0;
+		float num1, num2, num3, maior = 0;
 		
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.println("\nEntre com o primeiro número: ");
-		num = leia.nextFloat();
+		num1 = leia.nextFloat();
 		System.out.println("\nEntre com o segundo número: ");
-		num = leia.nextFloat();
+		num2 = leia.nextFloat();
 		System.out.println("\nEscreva o terceiro número: ");
-		num = leia.nextFloat();
+		num3 = leia.nextFloat();
 		
-		if(num > maior) {
-			maior = num;			
+		if(num1 > num2 && num1 > num3) {
+			maior = num1;
+		}else if (num2 > num1 && num2 > num3) {
+			maior = num2;
+		}else {
+			maior = num3;
 		}
 		
 		System.out.println("\nO maior número é: " + maior);
